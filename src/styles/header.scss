@@ -20,6 +20,11 @@
         order: 0;
     }
 
+    &__nav-icon-container {
+        position: relative;
+        z-index: 11;
+    }
+
     &__nav-icon {
         display: none;
         pointer-events: none;
