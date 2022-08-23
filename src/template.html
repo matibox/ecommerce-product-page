@@ -6,33 +6,69 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    
-
-    <!--
-    Collections
-    Men
-    Women
-    About
-    Contact
-
-    Sneaker Company
-
-    Fall Limited Edition Sneakers
-
-    These low-profile sneakers are your perfect casual wear companion. Featuring a 
-    durable rubber outer sole, they'll withstand everything the weather can offer.
-
-    $125.00
-    50%
-    $250.00
-
-    0
-    Add to cart
-  
-    <div class="attribution">
+    <header class="header">
+        <img data-logo alt="sneakers logo" class="header__logo">
+        <div class="header__nav__container">
+            <div class="header__nav-icon-container">
+                <img data-menu-open alt="open menu" class="header__nav-icon">
+                <img data-menu-close alt="close menu" class="header__nav-icon">
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Collections</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Men</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Women</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__cart-container">
+            <img data-cart alt="cart" class="header__cart">
+            <div class="header__cart-counter"></div>
+        </div>
+        <img data-pfp alt="profile" class="header__profile">
+    </header>
+    <main>
+        <section class="exposition">
+            <div class="exposition__main">
+                <img data-exposed alt="Fall Limited Edition Sneakers">
+            </div>
+            <div class="exposition__overwiev">
+                <img data-product-t-1 alt="Fall Limited Edition Sneakers">
+                <img data-product-t-2 alt="Fall Limited Edition Sneakers">
+                <img data-product-t-3 alt="Fall Limited Edition Sneakers">
+                <img data-product-t-4 alt="Fall Limited Edition Sneakers">
+            </div>
+        </section>
+        <section class="information">
+            <h3 class="information__company">Sneaker Company</h3>
+            <h1 class="descritpion__name">Fall Limited Edition Sneakers</h1>
+            <p class="information__description">
+                These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                durable rubber outer sole, they'll withstand everything the weather can offer.
+            </p>
+            <div class="information__price-container">
+                <h2 class="information__current-price">$125</h2>
+                <div class="information__discount">50%</div>
+                <h4 class="information__previous-price">$250</h4>
+            </div>
+        </section>
+        <section class="shop">
+            <div class="shop__quantity-container">
+                <img data-minus alt="remove">
+                <p class="shop__quantity">0</p>
+                <img data-plus alt="add">
+            </div>
+            <button class="shop__add-to-cart">
+                <img data-cart alt="cart">
+                <p>Add to cart</p>
+            </button>
+        </section>
+    </main>
+    <footer class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://github.com/matibox">Mateusz Hladky</a>.
-    </div>
-    -->
+    </footer>
 </body>
 </html>
