@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.attribution {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--deselected-text-color-light);
+
+    & a {
+        color: hsl(228, 45%, 44%);
+    }
+}
