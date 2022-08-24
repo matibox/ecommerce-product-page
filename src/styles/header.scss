@@ -1,11 +1,11 @@
 .header {
     width: 100%;
-    height: 5.5rem;
+    height: clamp(5.5rem, 8vw, 10rem);
     background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-inline: 2rem;
+    padding-inline: clamp(2rem, 5vw, 10rem);
 
     & > * {
         margin-inline: 1rem;
@@ -53,6 +53,7 @@
         height: 100%;
         cursor: pointer;
         color: var(--dark-gray-blue);
+        transition: color 0.15s ease;
 
         &--opened {
             color: var(--black);
@@ -81,9 +82,53 @@
 
     // ==== PROFILE ====
     &__profile {
+        --outline-width: 2px;
         order: 3;
         height: 50%;
         aspect-ratio: 1;
         border-radius: 50%;
+        box-shadow: 0 0 0 var(--outline-width) transparent;
+        transition: box-shadow 0.15s ease;
+        cursor: pointer;
+    }
+
+    // ==== DESKTOP ====
+    @media only screen and (min-width: 1200px) {
+        padding: 0;
+        margin-bottom: 6rem;
+        border-bottom: 1px solid var(--gray-blue);
+        width: 75%;
+        margin-inline: auto;
+
+        &__logo {
+            order: 0;
+        }
+
+        &__nav-container {
+            order: 1;
+            height: 100%;
+        }
+
+        &__nav-icon-container {
+            display: none;
+        }
+
+        &__cart-container {
+            margin-right: 3rem;
+        }
+    }
+
+    @media (hover: hover) {
+        &__cart {
+            &:hover {
+                color: var(--very-dark-blue);
+            }
+        }
+
+        &__profile {
+            &:hover {
+                box-shadow: 0 0 0 var(--outline-width) var(--orange);
+            }
+        }
     }
 }
