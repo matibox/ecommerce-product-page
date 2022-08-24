@@ -41,6 +41,7 @@ export default function assets() {
         { assetName: Minus, element: 'minus' },
         { assetName: Previous, element: 'previous' },
         { assetName: Next, element: 'next' },
+        { assetName: Delete, element: 'delete' },
     ];
 
     function setAssetsSource(assets) {

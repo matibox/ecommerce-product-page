@@ -1,0 +1,131 @@
+.cart {
+    --margin: 1rem;
+    position: absolute;
+    margin: var(--margin);
+    background-color: var(--white);
+    width: calc(100% - 2 * var(--margin));
+    height: 28rem;
+    top: 5.5rem;
+    left: 0;
+    z-index: 8;
+    border-radius: 1rem;
+    display: flex;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    flex-direction: column;
+
+    &--active {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    &__text {
+        width: 100%;
+        padding: 2rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--very-dark-blue);
+        border-bottom: 1px solid var(--gray-blue);
+    }
+
+    &__empty {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--dark-gray-blue);
+
+        &--full {
+            display: none;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        height: calc(100% - 6rem);
+        padding: 2rem;
+        display: none;
+        flex-direction: column;
+        gap: 3rem;
+
+        &--active {
+            display: flex;
+        }
+    }
+
+    &__info {
+        width: 100%;
+        height: 40%;
+        display: grid;
+        grid-template-columns: 1fr 3fr 0.3fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 0.2rem;
+    }
+
+    &__product-img {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > img {
+            aspect-ratio: 1;
+            height: 90%;
+            border-radius: 1rem;
+        }
+    }
+
+    &__product-name {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        font-size: 1.6rem;
+        color: var(--dark-gray-blue);
+    }
+
+    &__price {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 1.6rem;
+        color: var(--dark-gray-blue);
+    }
+
+    &__total-price {
+        color: var(--very-dark-blue);
+        font-weight: 700;
+    }
+
+    &__delete {
+        grid-column: 3/4;
+        grid-row: 1/3;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__checkout {
+        outline: none;
+        border: none;
+        background-color: var(--orange);
+        color: var(--white);
+        border-radius: 1rem;
+        font-family: inherit;
+        font-weight: 700;
+        padding: 2rem 4rem;
+        cursor: pointer;
+        font-size: 1.6rem;
+    }
+}
