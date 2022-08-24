@@ -1,0 +1,50 @@
+.shop {
+    padding: 0 2rem 2rem 2rem;
+
+    &__quantity-container {
+        width: 100%;
+        background-color: var(--light-gray-blue);
+        border-radius: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 3rem;
+        margin-bottom: 1rem;
+
+        & > img {
+            cursor: pointer;
+        }
+    }
+
+    &__quantity {
+        font-weight: 700;
+        color: var(--very-dark-blue);
+        font-size: 1.7rem;
+    }
+
+    &__add-to-cart {
+        border: none;
+        outline: none;
+        width: 100%;
+        background-color: var(--orange);
+        border-radius: 1rem;
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 3rem;
+        cursor: pointer;
+        box-shadow: 0 0 5rem 0 var(--pale-orange);
+        font-weight: 700;
+        gap: 1rem;
+
+        & > p {
+            font-family: 'Kumbh Sans', sans-serif;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__cart {
+        color: var(--white);
+    }
+}
