@@ -1,0 +1,43 @@
+.exposition {
+    position: relative;
+
+    // ==== SLIDER ====
+    &__product {
+        width: 100vw;
+        aspect-ratio: 20/17;
+    }
+
+    &__control {
+        --edge-distance: 1.5rem;
+        all: unset;
+        width: 4rem;
+        aspect-ratio: 1;
+        background-color: var(--light-gray-blue);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        & img {
+            height: 40%;
+        }
+
+        &--previous {
+            left: var(--edge-distance);
+        }
+
+        &--next {
+            right: var(--edge-distance);
+        }
+    }
+
+    // ==== DESKTOP ====
+    &__main,
+    &__overview {
+        display: none;
+    }
+}

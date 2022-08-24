@@ -1,4 +1,12 @@
+// Glide
+@import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
+
+// Basic setup
 @import './variables.scss';
 @import './base.scss';
+
+// Layout
 @import './header.scss';
 @import './nav.scss';
+@import './exposition.scss';
+@import './information.scss';

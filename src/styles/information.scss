@@ -1,0 +1,54 @@
+.information {
+    padding: 2rem;
+
+    &__company {
+        text-transform: uppercase;
+        color: var(--orange);
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+        font-size: 1.3rem;
+    }
+
+    &__name {
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--very-dark-blue);
+        line-height: 3rem;
+        margin-block: 1.5rem;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        color: var(--dark-gray-blue);
+        line-height: 1.5;
+    }
+
+    &__price-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    &__current-price {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    &__discount {
+        color: var(--orange);
+        font-weight: 700;
+        font-size: 1.6rem;
+        background-color: var(--pale-orange);
+        border-radius: 0.7rem;
+        padding: 0.5rem 1rem;
+    }
+
+    &__previous-price {
+        color: var(--gray-blue);
+        text-decoration: line-through;
+        margin-left: auto;
+        font-size: 1.6rem;
+    }
+}

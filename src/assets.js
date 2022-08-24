@@ -39,6 +39,8 @@ export default function assets() {
         { assetName: ProductFourThumbnail, element: 'product-t-4' },
         { assetName: Plus, element: 'plus' },
         { assetName: Minus, element: 'minus' },
+        { assetName: Previous, element: 'previous' },
+        { assetName: Next, element: 'next' },
     ];
 
     function setAssetsSource(assets) {
