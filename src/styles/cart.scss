@@ -139,14 +139,14 @@
     @media only screen and (min-width: 501px) {
         box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.2);
         left: inherit;
-        right: 0;
-        top: calc(100% - 2rem);
+        right: 1rem;
+        top: calc(var(--header-height) - clamp(1rem, 2vw, 2rem));
     }
 
     @media only screen and (min-width: 1200px) {
         width: 40rem;
         height: 30rem;
-        right: -3rem;
+        right: clamp(9rem, 10vw, 22rem);
 
         &__content {
             padding-bottom: 0;

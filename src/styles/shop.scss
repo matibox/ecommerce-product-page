@@ -48,7 +48,15 @@
         color: var(--white);
     }
 
+    @media only screen and (min-width: 950px) {
+        max-width: 70%;
+        margin-inline: auto;
+        margin-top: 1rem;
+    }
+
     @media only screen and (min-width: 1200px) {
+        max-width: none;
+        margin: 0;
         grid-column: 2/3;
         grid-row: 2/3;
         align-self: start;

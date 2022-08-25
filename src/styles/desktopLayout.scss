@@ -1,11 +1,11 @@
 main {
     @media only screen and (min-width: 1200px) {
         padding-top: 6rem;
-        width: 65%;
+        width: max(65%, 100rem);
         margin: auto;
         display: grid;
-        grid-template-columns: 60rem 1fr;
+        grid-template-columns: clamp(50rem, 35vw, 60rem) 1fr;
         grid-template-rows: 55rem 1fr;
-        column-gap: 2rem;
+        column-gap: 10rem;
     }
 }

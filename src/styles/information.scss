@@ -6,19 +6,19 @@
         color: var(--orange);
         font-weight: 700;
         letter-spacing: 0.2rem;
-        font-size: 1.3rem;
+        font-size: clamp(1.3rem, 1.2vw, 1.6rem);
     }
 
     &__name {
-        font-size: 3rem;
+        font-size: clamp(3rem, 3vw, 5rem);
         font-weight: 700;
         color: var(--very-dark-blue);
-        line-height: 3rem;
-        margin-block: 1.5rem;
+        line-height: clamp(3rem, 3vw, 5rem);
+        margin-block: clamp(1.5rem, 3vw, 3rem);
     }
 
     &__description {
-        font-size: 1.6rem;
+        font-size: clamp(1.6rem, 2vw, 1.7rem);
         color: var(--dark-gray-blue);
         line-height: 1.5;
     }
@@ -28,7 +28,7 @@
         align-items: center;
         justify-content: flex-start;
         gap: 2rem;
-        margin-top: 2rem;
+        margin-top: clamp(2rem, 3vw, 4rem);
     }
 
     &__current-price {
@@ -50,11 +50,28 @@
         color: var(--gray-blue);
         text-decoration: line-through;
         margin-left: auto;
-        font-size: 1.6rem;
+        font-size: clamp(1.6rem, 1.5vw, 2rem);
+    }
+
+    @media only screen and (min-width: 950px) {
+        max-width: 70%;
+        margin-inline: auto;
+        margin-top: 1rem;
     }
 
     @media only screen and (min-width: 1200px) {
+        max-width: none;
+        margin: 0;
         grid-column: 2/3;
         grid-row: 1/2;
+        align-self: center;
+
+        &__price-container {
+            flex-wrap: wrap;
+        }
+
+        &__previous-price {
+            flex-basis: 100%;
+        }
     }
 }
