@@ -121,4 +121,16 @@
             cursor: pointer;
         }
     }
+
+    @media (hover: hover) {
+        &__control {
+            & > svg {
+                transition: color 0.15s ease;
+            }
+
+            &:hover > svg {
+                color: var(--orange);
+            }
+        }
+    }
 }
