@@ -52,4 +52,9 @@
         margin-left: auto;
         font-size: 1.6rem;
     }
+
+    @media only screen and (min-width: 1200px) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 }

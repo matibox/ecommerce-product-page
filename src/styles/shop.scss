@@ -47,4 +47,10 @@
     &__cart {
         color: var(--white);
     }
+
+    @media only screen and (min-width: 1200px) {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        align-self: start;
+    }
 }
