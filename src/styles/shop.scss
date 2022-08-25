@@ -8,7 +8,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1.5rem 3rem;
+        padding: clamp(1.5rem, 2vw, 2rem) 3rem;
         margin-bottom: 1rem;
 
         & > img {
@@ -60,5 +60,15 @@
         grid-column: 2/3;
         grid-row: 2/3;
         align-self: start;
+    }
+
+    @media only screen and (min-width: 1720px) {
+        display: flex;
+        gap: 2rem;
+
+        &__quantity-container {
+            margin-bottom: 0;
+            flex-basis: 50%;
+        }
     }
 }
