@@ -93,6 +93,10 @@
     }
 
     // ==== DESKTOP ====
+    @media only screen and (min-width: 501px) {
+        position: relative;
+    }
+
     @media only screen and (min-width: 1200px) {
         padding: 0;
         margin-bottom: 6rem;

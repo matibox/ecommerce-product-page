@@ -4,6 +4,7 @@
     margin: var(--margin);
     background-color: var(--white);
     width: calc(100% - 2 * var(--margin));
+    max-width: 45rem;
     height: 28rem;
     top: 5.5rem;
     left: 0;
@@ -115,6 +116,10 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+
+        & > img {
+            transition: filter 0.15s ease;
+        }
     }
 
     &__checkout {
@@ -128,5 +133,29 @@
         padding: 2rem 4rem;
         cursor: pointer;
         font-size: 1.6rem;
+    }
+
+    // ==== DESKTOP ====
+    @media only screen and (min-width: 501px) {
+        box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.2);
+        left: inherit;
+        right: 0;
+        top: calc(100% - 2rem);
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 40rem;
+        height: 30rem;
+        right: -3rem;
+
+        &__content {
+            padding-bottom: 0;
+        }
+    }
+
+    @media (hover: hover) {
+        &__delete > img:hover {
+            filter: brightness(0.75);
+        }
     }
 }
