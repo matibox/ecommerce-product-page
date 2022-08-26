@@ -8,6 +8,9 @@ nav();
 import slider from './slider';
 slider();
 
+import cart from './cart';
+cart();
+
 // Enable transitions after the page loads
 window.addEventListener('load', () => {
     document.querySelectorAll('.preload').forEach(element => {

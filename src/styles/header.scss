@@ -47,6 +47,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &--opened > svg {
+            color: var(--black);
+        }
     }
 
     &__cart {
@@ -55,10 +59,6 @@
         cursor: pointer;
         color: var(--dark-gray-blue);
         transition: color 0.15s ease;
-
-        &--opened {
-            color: var(--black);
-        }
     }
 
     &__cart-counter {
