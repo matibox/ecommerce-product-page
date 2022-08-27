@@ -2,8 +2,8 @@ export default function nav() {
     const iconActiveClass = 'header__nav-icon--active';
     const navActiveClass = 'nav--active';
     const overlayActiveClass = 'nav__overlay--active';
-    const open = document.querySelector('[data-menu-open]');
-    const close = document.querySelector('[data-menu-close]');
+    const open = document.querySelector('[data-menu-open-btn]');
+    const close = document.querySelector('[data-menu-close-btn]');
     const nav = document.querySelector('[data-nav]');
     const overlay = document.querySelector('[data-overlay]');
 

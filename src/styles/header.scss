@@ -31,6 +31,13 @@
         pointer-events: none;
         cursor: pointer;
         visibility: hidden;
+        outline: none;
+        border: none;
+        background-color: inherit;
+
+        &:focus-visible {
+            outline: 2px solid var(--orange);
+        }
 
         &--active {
             display: block;

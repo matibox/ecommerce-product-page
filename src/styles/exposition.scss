@@ -13,7 +13,6 @@
 
     &__control {
         --edge-distance: 1.5rem;
-        all: unset;
         width: 4rem;
         aspect-ratio: 1;
         background-color: var(--white);
@@ -25,6 +24,12 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        border: none;
+        outline: none;
+
+        &:focus-visible {
+            outline: 2px solid var(--black);
+        }
 
         & img {
             height: 40%;
