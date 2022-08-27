@@ -46,9 +46,14 @@
     }
 
     &__link {
+        outline: none;
         color: var(--very-dark-blue);
         font-weight: 700;
         font-size: 1.8rem;
+
+        &:focus-visible {
+            outline: 2px solid var(--75black);
+        }
     }
 
     @media only screen and (min-width: 1200px) {

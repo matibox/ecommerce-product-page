@@ -16,6 +16,17 @@
         }
     }
 
+    &__button {
+        outline: none;
+        border: none;
+        background-color: inherit;
+        cursor: pointer;
+
+        &:focus-visible {
+            outline: 2px solid var(--75black);
+        }
+    }
+
     &__quantity {
         font-weight: 700;
         color: var(--very-dark-blue);
@@ -37,6 +48,10 @@
         box-shadow: 0 0 5rem 0 var(--pale-orange);
         font-weight: 700;
         gap: 1rem;
+
+        &:focus-visible {
+            outline: 2px solid var(--75black);
+        }
 
         & > p {
             font-family: 'Kumbh Sans', sans-serif;

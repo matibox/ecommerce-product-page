@@ -12,6 +12,7 @@ export default function slider() {
         swipeThreshold: false,
         dragThreshold: false,
         gap: 50,
+        keyboard: false,
     });
 
     const thumbnails = document.querySelectorAll('[data-slide-thumbnail]');

@@ -41,12 +41,18 @@
 
     // ==== CART ====
     &__cart-container {
+        all: unset;
+        box-sizing: border-box;
         order: 2;
         position: relative;
         margin-left: auto;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &:focus-visible {
+            outline: 2px solid var(--75black);
+        }
 
         &--opened > svg {
             color: var(--black);

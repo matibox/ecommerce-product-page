@@ -24,9 +24,9 @@ export default function cart() {
     const infoPreviousPrice = document.querySelector('[data-info-prev-price]');
 
     // ==== SHOP SECTION ELEMENTS ====
-    const remove = document.querySelector('[data-minus]');
+    const remove = document.querySelector('[data-remove]');
     const quantityEl = document.querySelector('[data-quantity]');
-    const add = document.querySelector('[data-plus]');
+    const add = document.querySelector('[data-add]');
     const addToCartEl = document.querySelector('[data-add-to-cart]');
 
     let quantity = 0;
